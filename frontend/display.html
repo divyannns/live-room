@@ -55,6 +55,7 @@
             );
           }
         });
+
         $("#userList").on("click", "tr", function () {
           const email = $(this).data("email");
           $.ajax({
@@ -74,11 +75,14 @@
             },
           });
         });
+
         $("#closePopup").click(function () {
           $("#userDetailsPopup").hide();
         });
+
         socket.on("userAdded", function (userData) {});
       });
     </script>
   </body>
 </html>
+
