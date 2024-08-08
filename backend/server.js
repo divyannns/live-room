@@ -1,6 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-const path = require("path");
+//const path = require("path");
 const connectDB = require("./config");
 const User = require("./model");
 const cors = require("cors");
@@ -21,7 +21,7 @@ app.use(
 
 app.use(cors());
 app.use(bodyParser.json());
-app.use(express.static(path.join(__dirname, "public")));
+//app.use(express.static(path.join(__dirname, "public")));
 
 let usersInRoom = {};
 
