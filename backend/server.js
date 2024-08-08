@@ -15,7 +15,7 @@ const io = socketIO(server);
 connectDB();
 app.use(
   cors({
-     origin: "https://live-room-1.onrender.com",
+     origin: 'https://live-room-xe7s.onrender.com',
    })
  );
 
